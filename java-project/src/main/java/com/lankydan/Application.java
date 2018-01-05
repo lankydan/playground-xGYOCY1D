@@ -1,5 +1,11 @@
 package com.lankydan;
 
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.UUID;
+
 import com.lankydan.cassandra.actor.ActorByMovieRepository;
 import com.lankydan.cassandra.actor.ActorRepository;
 import com.lankydan.cassandra.actor.entity.Actor;
@@ -9,15 +15,11 @@ import com.lankydan.cassandra.movie.repository.MovieByActorRepository;
 import com.lankydan.cassandra.movie.repository.MovieByGenreRepository;
 import com.lankydan.cassandra.movie.repository.MovieByYearRepository;
 import com.lankydan.cassandra.movie.repository.MovieRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.time.LocalDateTime;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
@@ -47,7 +49,7 @@ public class Application implements CommandLineRunner {
     final Actor mattDamon =
         new Actor(UUID.randomUUID(), "Matt Damon", LocalDateTime.of(1970, 10, 8, 0, 0));
 
-    actorRepository.insert(List.of(tomHanks, vinDiesel, mattDamon));
+    actorRepository.insert(Arrays.asList(tomHanks, vinDiesel, mattDamon));
 
     final Role captainMiller = new Role("Tom Hanks", "Captain Miller");
     final Role privateCaparzo = new Role("Vin Diesel", "Private Caparzo");
