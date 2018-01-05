@@ -1,6 +1,6 @@
-title: Spring 5 Project
+title: More complex modelling with Spring Data Cassandra
 plan:
-- title: Welcome
+- title: More complex modelling with Spring Data Cassandra
   statement: markdowns/welcome.md
 projects:
   java:
