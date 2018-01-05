@@ -364,4 +364,4 @@ In conclusion when creating an application with tables that store similar data t
 
 The code that has not been included in this post (quite a lot of it) can be found on my [GitHub](https://github.com/lankydan/spring-data-cassandra/tree/using_entities_the_cassandra_way)
 
-If you found this post helpful the original can be found here and my other posts can be found at [www.lankydanblog.com](https://lankydanblog.com)
+If you found this post helpful the original can be found [here](https://lankydanblog.com/2017/11/26/more-complex-modelling-with-spring-data-cassandra/) and my other posts can be found at [www.lankydanblog.com](https://lankydanblog.com)
